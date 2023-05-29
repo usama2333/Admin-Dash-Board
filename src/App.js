@@ -1,11 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import TopBar from "./scenes/global/TopBar";
+import { ColorModeContext , useMode } from "./theme";
+import { CssBaseline , ThemeProvider } from "@mui/material";
+
 
 function App() {
+  const [theme , colorMode] = useMode();
+
   return (
+
+    <ColorModeContext.Provider value={colorMode}>
+    <ThemeProvider theme={theme}>
+    <CssBaseline/>
     <div className="app">
-      This is app componet
+      
+      <div className="content">
+         <TopBar/>
+      </div>
+
     </div>
+    </ThemeProvider>
+    </ColorModeContext.Provider>
   );
 }
 
