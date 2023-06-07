@@ -117,17 +117,17 @@ const Calendar = () => {
               {
                 id: "12315",
                 title: "All-day event",
-                date: "2023-05-22",
+                date: "2023-06-22",
               },
               {
                 id: "5123",
                 title: "Timed event",
-                date: "2023-05-26",
+                date: "2023-06-26",
               },
               {
                 id: "3332",
                 title: "Evening event",
-                date: "2023-05-12",
+                date: "2023-06-12",
               },
             ]}
           />
